@@ -1,0 +1,14 @@
+name: NoCheatItems
+version: '1.0'
+main: org.NJ.noCheatItems.NoCheatItems
+api-version: '1.21'
+folia-supported: true
+commands:
+  nocheatitem:
+    description: Main command for NoCheatItems
+    usage: /<command> [gui|run]
+    permission: nocheatitems.admin
+permissions:
+  nocheatitems.admin:
+    description: Allows use of NoCheatItems commands
+    default: op

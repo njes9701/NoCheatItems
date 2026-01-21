@@ -1,0 +1,10 @@
+首先這是一個folia plugin
+
+主要功能
+/nocheatitem gui
+召喚一個箱子GUI
+只要將作弊武器放入箱子
+該plugin會自動分析該物品的名稱與效果記錄下該特徵
+/nocheatitem run
+執行run後會偵測整個伺服器玩家背包.終界箱有無該武器一次
+如果有記錄該玩家ID與存放位置至plugin資料夾成txt檔案，並且直接刪除該物品。
