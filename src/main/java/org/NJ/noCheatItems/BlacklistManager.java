@@ -12,7 +12,7 @@ public class BlacklistManager {
     private final NoCheatItems plugin;
     private final List<ItemStack> blacklist = new ArrayList<>();
     private List<ItemFeature> cachedFeatures = new ArrayList<>();
-    private boolean autoScanEnabled = true;
+    private boolean autoScanEnabled = false;
     private final File itemsFile;
     private final File settingsFile;
 
@@ -35,7 +35,7 @@ public class BlacklistManager {
         }
         rebuildCache();
         if (settingsFile.exists()) {
-            autoScanEnabled = YamlConfiguration.loadConfiguration(settingsFile).getBoolean("auto", true);
+            autoScanEnabled = YamlConfiguration.loadConfiguration(settingsFile).getBoolean("auto", false);
         }
     }
 

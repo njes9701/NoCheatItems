@@ -31,7 +31,7 @@ public class Scanner {
         if (targets.isEmpty()) return;
 
         scanInventory(plugin, target, target.getInventory(), "背包", targets, admin, delete);
-        scanInventory(plugin, target, target.getEnderChest(), "終界箱", targets, admin, delete);
+        scanInventory(plugin, target, target.getEnderChest(), "終界箱", targets, admin, false);
     }
 
     private static void scanInventory(NoCheatItems plugin, Player p, Inventory inv, String containerName, List<ItemFeature> targets, Player admin, boolean delete) {
